@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Birthday Angel 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 0️⃣ NEW FULLSCREEN SLIDESHOW -->
+  <section id="slideshow">
+    <div class="slideshow-image"></div>
+  </section>
+
+  <!-- 1️⃣ Count-Up Section -->
+  <section id="countup-section" class="hidden">
+    <h1 class="big-title">Counting the Days of Love 💞</h1>
+    <div id="countup">Day 1</div>
+    <p class="hint">From September 1st … waiting for September 27th 💖</p>
+  </section>
+
+  <!-- 2️⃣ Birthday Intro -->
+  <section id="intro" class="hidden">
+    <h1 class="balloon-title">🎈 Happy Birthday Angel 🎀</h1>
+    <p class="intro-text">
+      Today is all about YOU!  
+      Your smile lights up my world and your love fills my heart.  
+      Let's celebrate the beautiful journey we share. 💖
+    </p>
+    <div class="balloon-container"></div>
+    <button id="startBtn">Begin the Surprises ✨</button>
+  </section>
+
+  <!-- 3️⃣ Surprise Boxes -->
+  <section id="surprise-section" class="hidden">
+    <h2>💌 Love Messages & Surprises</h2>
+    <p class="message">Click the boxes below to reveal hidden surprises 🎁</p>
+    <div class="surprise-grid">
+      <div class="surprise-box" data-msg="You are the melody in my heart 💕" data-vid="videos/vid1.mp4">🎁</div>
+      <div class="surprise-box" data-msg="Every day with you is a blessing 🌹" data-vid="videos/vid2.mp4">🎁</div>
+      <div class="surprise-box" data-msg="I love your laughter more than anything 😍" data-vid="videos/vid3.mp4">🎁</div>
+      <div class="surprise-box" data-msg="You make my world magical ✨" data-vid="videos/vid4.mp4">🎁</div>
+    </div>
+
+    <div id="reveal-area" class="hidden">
+      <p id="reveal-message"></p>
+      <video id="reveal-video" controls></video>
+    </div>
+
+    <button id="nextGallery">Next: Photo Memories 📸</button>
+  </section>
+
+  <!-- 4️⃣ Photo Gallery -->
+  <section id="gallery-section" class="hidden">
+    <h2>💖 Our Beautiful Memories</h2>
+    <p class="gallery-text">Hover or tap each photo to reveal a sweet note 💌</p>
+    <div class="photo-grid">
+      <div class="photo-card" data-note="Our meetings at the busstop 🌇"><img src="images/p1.jpg"></div>
+      <div class="photo-card" data-note="The first day we met 📷"><img src="images/p2.jpg"></div>
+      <div class="photo-card" data-note="The first day you held my hands 🤝"><img src="images/p3.jpg"></div>
+      <div class="photo-card" data-note="That rainy night class hug 🌧️"><img src="images/p4.jpg"></div>
+      <div class="photo-card" data-note="The night class walk we have had 🌴"><img src="images/p5.jpg"></div>
+      <div class="photo-card" data-note="Every smile of yours melts my heart ❤️"><img src="images/p6.jpg"></div>
+      <div class="photo-card" data-note="Your eyes tell a thousand stories 💫"><img src="images/p7.jpg"></div>
+      <div class="photo-card" data-note="Our little secrets forever 🔒"><img src="images/p8.jpg"></div>
+      <div class="photo-card" data-note="The quiet night we danced under stars 🌌"><img src="images/p9.jpg"></div>
+      <div class="photo-card" data-note="Forever my Angel 💕"><img src="images/p10.jpg"></div>
+    </div>
+    <button id="nextMessage">Next: Love Letter 💌</button>
+  </section>
+
+  <!-- 5️⃣ Long Birthday & Love Message -->
+  <section id="message-section" class="hidden">
+    <h2>My Heart in Words 💖</h2>
+    <div class="long-message">
+      <p>
+        My sweetest Angel,<br><br>
+        From the first moment we met, you’ve filled my life with laughter,
+        adventure, and a love so deep I never imagined it was possible.
+        Every sunrise is brighter because you exist.  
+        Every challenge feels lighter because you’re by my side.  
+        On this special day, I celebrate not just your birthday,
+        but the countless memories we’ve created together.<br><br>
+        Thank you for loving me, inspiring me, and believing in us.
+        Today, I promise to keep cherishing, supporting, and adoring you
+        through every season of life.  
+        Happy Birthday, my love. Here’s to forever with you. 💕
+      </p>
+    </div>
+    <button id="nextVideo">Final Surprise 🎥</button>
+  </section>
+
+  <!-- 6️⃣ Final Video Section -->
+  <section id="video-section" class="hidden">
+    <h2>🎬 Our Moments in Motion</h2>
+    <p class="gallery-text">Hover or click a video to reveal a special note ✨</p>
+    <div class="video-grid">
+      <div class="video-card" data-note="You are just too amazing 😂">
+        <video src="videos/vid5.mp4" muted loop controls></video>
+      </div>
+      <div class="video-card" data-note="Our second meetind 🌌">
+        <video src="videos/vid6.mp4" muted loop controls></video>
+      </div>
+      <div class="video-card" data-note="The trip that changed everything ✈️">
+        <video src="videos/vid7.mp4" muted loop controls></video>
+      </div>
+      <div class="video-card" data-note="The moment you agreed to this 💍">
+        <video src="videos/vid8.mp4" muted loop controls></video>
+      </div>
+    </div>
+    <p class="final-text">💖 I can’t wait to create a lifetime of new memories with you 💖</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
